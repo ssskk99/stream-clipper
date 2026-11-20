@@ -15,17 +15,17 @@ nav { display:flex; gap:16px; margin-bottom:32px; font-size:14px; }
 </style>
 </head>
 <body><main>
-<nav><a href="#about">About</a><a href="#privacy">Privacy policy</a></nav>
+<nav><a href="#about">About</a><a href="#privacy">Privacy policy</a><a href="#terms">Terms of service</a></nav>
 
 <section id="about">
 <h1>Stream Clipper</h1>
-<p class="sub">A personal tool that turns Twitch stream highlights into vertical short videos and uploads them to its owner's YouTube channel.</p>
+<p class="sub">A personal tool that turns Twitch stream highlights into vertical short videos and uploads them to its owner's YouTube channel and TikTok account.</p>
 <p>Stream Clipper runs on its owner's own Windows PC. When a followed Twitch stream ends, it finds the most interesting moments,
 cuts them into 1–3 minute vertical clips with captions, and writes a title and description for each one.
-The owner reviews the clips and, if they choose, uploads them to their own YouTube channel as Shorts.
+The owner reviews the clips and, if they choose, uploads them to their own YouTube channel as Shorts and sends them to their own TikTok account as drafts, which they finish and post in the TikTok app.
 Each upload credits the original streamer and links to the source stream.</p>
 <p>Stream Clipper is not a public service. It has no user accounts and no website other than this page, and it is used only by
-the owner of the YouTube channel it posts to.</p>
+the owner of the YouTube channel and TikTok account it posts to.</p>
 </section>
 
 <section id="privacy">
@@ -38,14 +38,19 @@ the owner of the YouTube channel it posts to.</p>
 owner has made with the tool, together with each clip's title and description. It does not read, change or delete
 your existing videos, comments, subscriptions, playlists, or any other account data.</p>
 
+<h3>TikTok user data it accesses</h3>
+<p>Stream Clipper asks TikTok for basic profile access (<code>user.info.basic</code>, which TikTok includes with sign-in) and
+<strong>upload drafts</strong> (<code>video.upload</code>). It uses these only to send clips the account owner made with the
+tool to their own TikTok inbox as drafts. It does not read, post, change or delete anything else on the account.</p>
+
 <h3>How it is stored</h3>
-<p>The sign-in token Google issues is saved only in a file on the owner's own computer. It is never sent anywhere except
-to Google when uploading. Stream Clipper has no servers and collects no analytics.</p>
+<p>The sign-in tokens Google and TikTok issue are saved only in files on the owner's own computer. They are never sent anywhere except
+to Google or TikTok when uploading. Stream Clipper has no servers and collects no analytics.</p>
 
 <h3>Sharing</h3>
-<p>Stream Clipper does not sell, share or transfer Google user data to anyone. To pick highlights, it sends text
+<p>Stream Clipper does not sell, share or transfer Google or TikTok user data to anyone. To pick highlights, it sends text
 transcripts and chat activity from public Twitch streams to Anthropic's Claude API. This is public stream content,
-not Google user data.</p>
+not Google or TikTok user data.</p>
 
 <h3>Limited Use</h3>
 <p>Stream Clipper's use and transfer of information received from Google APIs adheres to the
@@ -56,11 +61,24 @@ see also the <a href="https://policies.google.com/privacy">Google Privacy Policy
 
 <h3>Removing access</h3>
 <p>You can revoke Stream Clipper's access at any time at
-<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
-Deleting the token file from the computer also removes it permanently.</p>
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+(Google) or in the TikTok app under Settings and privacy, Security, Manage app permissions (TikTok).
+Deleting the token files from the computer also removes them permanently.</p>
 
 <h3>Changes and contact</h3>
 <p>If this policy changes, the date above will be updated. For questions, open an issue on the GitHub repository that hosts this page.</p>
+</section>
+
+<section id="terms">
+<h2>Terms of service</h2>
+<p class="sub">Last updated: November 18, 2026</p>
+<p>Stream Clipper is a personal tool, provided as is, with no warranty. It is used only by its owner, on their own
+computer, to post to their own YouTube channel and TikTok account. The owner is responsible for what they post and for
+following YouTube's and TikTok's terms and community guidelines, including only posting clips they have the right to
+share. Stream Clipper's use of YouTube and TikTok is also subject to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+<a href="https://www.tiktok.com/legal/terms-of-service">TikTok Terms of Service</a>.
+For questions, open an issue on the GitHub repository that hosts this page.</p>
 </section>
 </main></body>
 </html>
